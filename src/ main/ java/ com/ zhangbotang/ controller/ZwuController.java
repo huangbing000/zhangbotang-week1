@@ -50,9 +50,9 @@ public class ZwuController {
 	 */
 	@RequestMapping("toList")
 	public String toList(String mohu,@RequestParam(defaultValue = "1")int pageNum,HttpServletRequest request) {
-//		(1)分页展示（5分）
-//		(2)按植物名称模糊搜索（5分），搜索后的数据也能正确分页（5分）
-//		(3)完成“查看”功能。点击“查看”按钮后，弹出一个新网页，当前数据要正确显示，分类要进行回显。（5分）
+// （1）分页展示		
+//（2）按植物名称模糊搜索（5分），搜索后的数据也能正确分页（5分）		
+// （3）完成“查看”功能。点击“查看”按钮后，弹出一个新网页，当前数据要正确显示，分类要进行回显。（5分）		
 		int pageSize = 4;
 		PageInfo<Zwu> pageInfo = ser.selects(mohu,pageNum,pageSize);
 		request.setAttribute("pageInfo", pageInfo);
