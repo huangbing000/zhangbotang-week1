@@ -58,6 +58,7 @@ public class ZwuController {
 		request.setAttribute("pageInfo", pageInfo);
 		request.setAttribute("mohu", mohu);
 		request.setAttribute("pageSize", pageSize);
+		System.out.println("我是张博堂");
 		return "list";
 	}
 	//添加页面
